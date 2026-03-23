@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vivek Kumar — Responsible AI & Data Protection Leader</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#09090e;--s1:#0f0f18;--s2:#16161f;--s3:#1d1d2a;
+  --b1:#252535;--b2:#353548;--b3:#454560;
+  --t1:#f0eee8;--t2:#9896a4;--t3:#5a5870;
+  --gold:#c9a96e;--gold2:#e8c98a;--gold3:#f5dea8;
+  --teal:#4ecdc4;--teal2:#7ee8e2;
+  --grn:#52c77a;--grn2:#86efac;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--t1);font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.6;overflow-x:hidden}
+
+/* grain */
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:0}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(9,9,14,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--b1);padding:.6rem 4rem;display:flex;align-items:center;justify-content:space-between}
+.nav-name{font-family:'Playfair Display',serif;font-size:16px;color:var(--t1)}
+.nav-links{display:flex;gap:1.5rem}
+.nav-links a{font-size:11px;color:var(--t2);text-decoration:none;letter-spacing:.04em;transition:color .2s}
+.nav-links a:hover{color:var(--gold2)}
+
+/* HERO */
+.hero{min-height:100vh;display:grid;grid-template-columns:55% 45%;position:relative;z-index:1;padding-top:60px}
+.hl{padding:5rem 4rem 4rem 5rem;display:flex;flex-direction:column;justify-content:center}
+.hl::after{content:'';position:absolute;left:55%;top:15%;bottom:15%;width:1px;background:linear-gradient(to bottom,transparent,var(--b2) 30%,var(--b2) 70%,transparent)}
+.eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:'';width:28px;height:1px;background:var(--gold)}
+h1{font-family:'Playfair Display',serif;font-size:54px;font-weight:500;line-height:1.08;letter-spacing:-.02em;margin-bottom:1.25rem}
+h1 em{font-style:italic;color:var(--gold2)}
+.headline-tag{font-size:13px;color:var(--gold3);font-weight:400;margin-bottom:1rem;line-height:1.5;max-width:480px}
+.tagline{font-size:13px;color:var(--t2);line-height:1.75;max-width:460px;margin-bottom:2rem}
+.certs{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:2rem}
+.cert{font-family:'DM Mono',monospace;font-size:10px;padding:3px 9px;border:1px solid var(--b3);border-radius:3px;color:var(--gold3);letter-spacing:.05em}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn-p{padding:.55rem 1.4rem;background:var(--gold);color:var(--bg);font-size:12px;font-weight:500;border:none;border-radius:3px;cursor:pointer;text-decoration:none;transition:background .2s;display:inline-block}
+.btn-p:hover{background:var(--gold2)}
+.btn-o{padding:.55rem 1.4rem;background:transparent;color:var(--t2);font-size:12px;border:1px solid var(--b3);border-radius:3px;cursor:pointer;text-decoration:none;transition:all .2s;display:inline-block}
+.btn-o:hover{border-color:var(--gold);color:var(--gold)}
+
+.hr{padding:4rem 4rem 4rem 3rem;display:flex;flex-direction:column;justify-content:center;gap:12px}
+.scard{background:var(--s2);border:1px solid var(--b1);border-radius:6px;padding:1.1rem 1.35rem;position:relative;overflow:hidden;transition:border-color .2s}
+.scard:hover{border-color:var(--b2)}
+.scard::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--gold)}
+.sn{font-family:'Playfair Display',serif;font-size:34px;font-weight:500;color:var(--gold2);line-height:1;margin-bottom:.2rem}
+.sl{font-size:11px;color:var(--t2);line-height:1.45}
+
+/* SECTIONS */
+.sec{position:relative;z-index:1;padding:4.5rem 5rem;border-top:1px solid var(--b1);max-width:1200px;margin:0 auto}
+.ey{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem;display:flex;align-items:center;gap:10px}
+.ey::before{content:'';width:20px;height:1px;background:var(--gold)}
+h2{font-family:'Playfair Display',serif;font-size:30px;font-weight:500;letter-spacing:-.01em;margin-bottom:1.5rem;color:var(--t1)}
+.sec-sub{font-size:12px;color:var(--t2);line-height:1.6;max-width:600px;margin-bottom:1.5rem}
+
+/* CERT GRID */
+.cred-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+.ccard{background:var(--s1);border:1px solid var(--b1);border-radius:6px;padding:.9rem 1.1rem;transition:all .2s;cursor:default}
+.ccard:hover{border-color:var(--gold);transform:translateY(-2px)}
+.ci{font-family:'DM Mono',monospace;font-size:11px;color:var(--gold);margin-bottom:.4rem;letter-spacing:.04em}
+.cn{font-size:13px;font-weight:500;color:var(--t1);margin-bottom:.15rem}
+.co{font-size:11px;color:var(--t3)}
+
+/* IAPP CHAPTERS */
+.chap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.chap{background:var(--s1);border:1px solid var(--b1);border-radius:6px;padding:1.2rem 1.25rem;position:relative;overflow:hidden;transition:border-color .2s}
+.chap:hover{border-color:var(--gold)}
+.chap.act::after{content:'ACTIVE THROUGH 2027';position:absolute;top:.8rem;right:.8rem;font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.08em;color:var(--teal2);background:rgba(78,205,196,.1);padding:2px 7px;border-radius:20px;border:1px solid rgba(78,205,196,.25)}
+.chflag{font-size:24px;margin-bottom:.5rem}
+.cht{font-size:13px;font-weight:500;color:var(--t1);margin-bottom:.15rem}
+.chs{font-size:12px;color:var(--gold2);margin-bottom:.25rem}
+.chterm{font-family:'DM Mono',monospace;font-size:10px;color:var(--t3);margin-bottom:.4rem}
+.chp{font-size:11px;color:var(--t3);line-height:1.5}
+
+/* TIMELINE (experience) */
+.tl{display:grid;gap:0}
+.tli{display:grid;grid-template-columns:130px 1px 1fr;gap:0 1.5rem;padding-bottom:2rem}
+.tld{font-family:'DM Mono',monospace;font-size:10px;color:var(--t3);text-align:right;padding-top:.15rem;line-height:1.4}
+.tlline{position:relative}
+.tlline::before{content:'';position:absolute;left:50%;top:8px;bottom:-2rem;width:1px;background:var(--b2);transform:translateX(-50%)}
+.tldot{width:8px;height:8px;background:var(--gold);border-radius:50%;position:absolute;left:50%;top:5px;transform:translateX(-50%);box-shadow:0 0 8px rgba(201,169,110,.5)}
+.tlt{font-size:14px;font-weight:500;color:var(--t1);margin-bottom:.1rem;line-height:1.3}
+.tlo{font-size:12px;color:var(--gold2);margin-bottom:.3rem}
+.tldesc{font-size:12px;color:var(--t2);line-height:1.6}
+.tltags{display:flex;flex-wrap:wrap;gap:4px;margin-top:.4rem}
+.tltag{font-size:9px;padding:2px 7px;background:var(--s3);border:1px solid var(--b2);border-radius:20px;color:var(--t3);font-family:'DM Mono',monospace;letter-spacing:.03em}
+
+/* PUBLICATIONS */
+.pub-list{display:grid;gap:8px}
+.pub{background:var(--s1);border:1px solid var(--b1);border-radius:6px;padding:.85rem 1.1rem;display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:start;transition:border-color .2s}
+.pub:hover{border-color:var(--b2)}
+.pnum{font-family:'Playfair Display',serif;font-size:18px;color:var(--b3);font-weight:400;min-width:24px;text-align:right;padding-top:2px}
+.ptitle{font-size:12px;font-weight:500;color:var(--t1);margin-bottom:.15rem;line-height:1.4}
+.pmeta{font-size:11px;color:var(--t3);line-height:1.5}
+.pbdg{font-family:'DM Mono',monospace;font-size:9px;padding:2px 7px;border-radius:20px;border:1px solid;white-space:nowrap}
+.bl{background:rgba(78,205,196,.1);color:var(--teal2);border-color:rgba(78,205,196,.3)}
+.bp{background:rgba(201,169,110,.1);color:var(--gold3);border-color:rgba(201,169,110,.3)}
+.bi{background:var(--s3);color:var(--t2);border-color:var(--b2)}
+
+/* ARTICLES */
+.art-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px}
+.acard{background:var(--s1);border:1px solid var(--b1);border-radius:6px;padding:.85rem 1rem;transition:border-color .2s}
+.acard:hover{border-color:var(--b2)}
+.atitle{font-size:12px;font-weight:500;color:var(--t1);line-height:1.4;margin-bottom:.25rem}
+.ameta{font-size:10px;color:var(--t3);font-family:'DM Mono',monospace}
+
+/* PEER REVIEW */
+.rev-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+.rcard{background:var(--s2);border:1px solid var(--b1);border-radius:6px;padding:1rem 1.1rem;transition:border-color .2s}
+.rcard:hover{border-color:var(--b2)}
+.rconf{font-size:13px;font-weight:500;color:var(--t1);margin-bottom:.1rem}
+.ridx{font-family:'DM Mono',monospace;font-size:10px;color:var(--teal);margin-bottom:.3rem}
+.rnum{font-family:'Playfair Display',serif;font-size:30px;color:var(--gold2);line-height:1;margin-bottom:.1rem}
+.rlbl{font-size:11px;color:var(--t3);line-height:1.4}
+
+/* SPEAKING */
+.spk-list{display:grid;gap:7px}
+.spki{background:var(--s1);border:1px solid var(--b1);border-radius:6px;padding:.8rem 1.1rem;display:flex;align-items:center;gap:10px;transition:border-color .2s}
+.spki:hover{border-color:var(--b2)}
+.spkrole{font-family:'DM Mono',monospace;font-size:9px;padding:2px 9px;border-radius:20px;white-space:nowrap;min-width:68px;text-align:center;border:1px solid;letter-spacing:.04em}
+.rk{background:rgba(201,169,110,.12);color:var(--gold3);border-color:rgba(201,169,110,.3)}
+.ri{background:var(--s3);color:var(--t2);border-color:var(--b2)}
+.rp{background:rgba(78,205,196,.1);color:var(--teal2);border-color:rgba(78,205,196,.3)}
+.spkb{flex:1}
+.spkt{font-size:12px;font-weight:500;color:var(--t1);line-height:1.35}
+.spkm{font-size:11px;color:var(--t3)}
+.spky{font-family:'DM Mono',monospace;font-size:10px;color:var(--t3);white-space:nowrap}
+
+/* MEMBERSHIPS */
+.mem-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px}
+.mcard{background:var(--s1);border:1px solid var(--b1);border-radius:6px;padding:1rem 1.2rem;transition:border-color .2s}
+.mcard:hover{border-color:var(--gold)}
+.mn{font-size:13px;font-weight:500;color:var(--t1);margin-bottom:.15rem}
+.mr{font-size:12px;color:var(--gold2);margin-bottom:.3rem}
+.md{font-size:11px;color:var(--t3);line-height:1.5}
+
+/* ORIGINAL WORK */
+.work-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.wcard{background:var(--s1);border:1px solid var(--b1);border-radius:6px;padding:1.2rem 1.35rem}
+.wey{font-family:'DM Mono',monospace;font-size:9px;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.5rem}
+.wt{font-size:14px;font-weight:500;color:var(--t1);margin-bottom:.5rem;line-height:1.35}
+.wd{font-size:12px;color:var(--t2);line-height:1.6;margin-bottom:.75rem}
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.met{background:var(--s3);border:1px solid var(--b2);border-radius:4px;padding:.4rem .6rem;text-align:center}
+.mval{font-family:'Playfair Display',serif;font-size:18px;color:var(--gold2);line-height:1}
+.mlbl{font-size:10px;color:var(--t3)}
+
+/* AWARD */
+.award-card{background:var(--s1);border:1px solid var(--b1);border-radius:6px;padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1.5rem;max-width:580px;transition:border-color .2s}
+.award-card:hover{border-color:var(--gold)}
+.astar{font-family:'Playfair Display',serif;font-size:52px;color:var(--gold2);line-height:1}
+.aname{font-size:15px;font-weight:500;color:var(--t1);margin-bottom:.2rem}
+.aorg{font-size:13px;color:var(--gold2);margin-bottom:.3rem}
+.adesc{font-size:12px;color:var(--t3)}
+
+/* CONTACT */
+.contact-bar{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+.ci-item{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--t2)}
+.cdot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0}
+
+/* FOOTER */
+footer{border-top:1px solid var(--b1);padding:1.75rem 5rem;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:1}
+.fn{font-family:'Playfair Display',serif;font-size:18px;color:var(--t2)}
+.fr{font-family:'DM Mono',monospace;font-size:9px;color:var(--t3);letter-spacing:.08em;text-align:right;line-height:1.6}
+
+/* ANIMATIONS */
+@keyframes fu{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.hl>*,.hr>*{opacity:0;animation:fu .6s forwards}
+.hl>*:nth-child(1){animation-delay:.1s}.hl>*:nth-child(2){animation-delay:.2s}
+.hl>*:nth-child(3){animation-delay:.3s}.hl>*:nth-child(4){animation-delay:.38s}
+.hl>*:nth-child(5){animation-delay:.46s}.hl>*:nth-child(6){animation-delay:.54s}
+.hr>*:nth-child(1){animation-delay:.25s}.hr>*:nth-child(2){animation-delay:.38s}
+.hr>*:nth-child(3){animation-delay:.51s}.hr>*:nth-child(4){animation-delay:.64s}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  nav{padding:.6rem 1.5rem}
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hl{padding:5rem 2rem 2rem;}.hl::after{display:none}
+  .hr{padding:2rem}
+  h1{font-size:38px}
+  .sec{padding:3rem 2rem}
+  .chap-grid,.work-grid{grid-template-columns:1fr}
+  footer{padding:1.5rem 2rem;flex-direction:column;gap:.75rem;text-align:center}
+}
+
+@media print{
+  body{background:white;color:#111}
+  :root{--bg:white;--s1:#f8f8f8;--s2:#f2f2f2;--s3:#ebebeb;--t1:#111;--t2:#555;--t3:#888;--gold:#8B6914;--gold2:#a07820;--gold3:#b08830;--b1:#e0e0e0;--b2:#ccc;--b3:#bbb}
+  body::before,nav{display:none}
+  .hero{min-height:auto;padding-top:0}
+  .hero-btns{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-name">Vivek Kumar</div>
+  <div class="nav-links">
+    <a href="#credentials">Credentials</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#publications">Publications</a>
+    <a href="#reviewing">Reviewing</a>
+    <a href="#speaking">Speaking</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hl">
+    <div class="eyebrow">AI Governance · Privacy · Cybersecurity Risk</div>
+    <h1>Vivek<br><em>Kumar</em></h1>
+    <div class="headline-tag">Responsible AI &amp; Data Protection Leader · GDPR · EU AI Act · ISO 42001 · AI Governance · Privacy Strategy · DPO · Risk &amp; Compliance Transformation</div>
+    <p class="tagline">AI is moving faster than most organisations can govern — and that's exactly where I thrive. For 15+ years I've been helping global companies turn complex AI, privacy, and regulatory challenges into practical, scalable governance systems that business and engineering teams can actually use. I specialise in the bridge between innovation and compliance: ensuring AI/ML models are fair, explainable, low-risk, and deployable at scale — without slowing down product teams.</p>
+    <div class="certs">
+      <span class="cert">AIGP</span><span class="cert">FIP</span><span class="cert">CIPP/E</span>
+      <span class="cert">CIPM</span><span class="cert">CIPP/US</span><span class="cert">CISM</span>
+    </div>
+    <div class="hero-btns">
+      <a href="/cdn-cgi/l/email-protection#dcaab7b7a8bdafb7a9afbd9cbbb1bdb5b0f2bfb3b1" class="btn-p">Get in touch</a>
+      <a href="https://linkedin.com/in/vivekdp" target="_blank" class="btn-o">LinkedIn</a>
+    </div>
+  </div>
+  <div class="hr">
+    <div class="scard">
+      <div class="sn">34+</div>
+      <div class="sl">Peer-reviewed manuscripts evaluated across 4 IEEE &amp; Scopus-indexed conferences — including a Government of India parliamentary institution</div>
+    </div>
+    <div class="scard">
+      <div class="sn">3</div>
+      <div class="sl">IAPP KnowledgeNet Chapters chaired across 🇮🇳 India and 🇺🇸 USA — active as Philadelphia Chapter Chair through December 2027</div>
+    </div>
+    <div class="scard">
+      <div class="sn">16+</div>
+      <div class="sl">Published works — IEEE, De Gruyter, Wiley, Springer, IAPP Privacy Advisor, LinkedIn Articles</div>
+    </div>
+    <div class="scard">
+      <div class="sn">95%</div>
+      <div class="sl">First-pass compliance rate achieved by original AI regulatory compliance agent across 10+ international regulations — reducing cycle time from 4 weeks to 2 hours</div>
+    </div>
+  </div>
+</div>
+
+<!-- CREDENTIALS -->
+<section class="sec" id="credentials">
+  <div class="ey">Professional Credentials</div>
+  <h2>Certifications &amp; Designations</h2>
+  <div class="cred-grid">
+    <div class="ccard"><div class="ci">AIGP</div><div class="cn">AI Governance Professional</div><div class="co">IAPP — International Association of Privacy Professionals</div></div>
+    <div class="ccard"><div class="ci">FIP</div><div class="cn">Fellow of Information Privacy</div><div class="co">IAPP — Highest individual designation in the privacy profession</div></div>
+    <div class="ccard"><div class="ci">CIPP/E</div><div class="cn">Certified Information Privacy Professional / Europe</div><div class="co">IAPP — EU GDPR and European privacy law</div></div>
+    <div class="ccard"><div class="ci">CIPM</div><div class="cn">Certified Information Privacy Manager</div><div class="co">IAPP — Privacy program management and operations</div></div>
+    <div class="ccard"><div class="ci">CIPP/US</div><div class="cn">Certified Information Privacy Professional / US</div><div class="co">IAPP — US federal and state privacy law</div></div>
+    <div class="ccard"><div class="ci">CISM</div><div class="cn">Certified Information Security Manager</div><div class="co">ISACA — Information security governance, risk and compliance</div></div>
+    <div class="ccard"><div class="ci">AI2030 · 2025</div><div class="cn">Global Fellowship — 2025 Cohort</div><div class="co">Competitively selected · 5,000+ professionals · 50+ countries · UNGA week tradition</div></div>
+    <div class="ccard"><div class="ci">CAIDP</div><div class="cn">Fellow Researcher</div><div class="co">Center for AI and Digital Policy — influences UN, EU &amp; US AI governance</div></div>
+  </div>
+</section>
+
+<!-- IAPP CHAPTER LEADERSHIP -->
+<section class="sec" id="leadership">
+  <div class="ey">Leadership</div>
+  <h2>IAPP KnowledgeNet Chapter Chairs</h2>
+  <p class="sec-sub">IAPP is the world's largest privacy association — 70,000+ members, 500+ chapters globally. Appointed as Chapter Chair by IAPP selection committee following competitive review. Three chapters across two countries spanning January 2020 through December 2027.</p>
+  <div class="chap-grid">
+    <div class="chap act">
+      <div class="chflag">🇺🇸</div>
+      <div class="cht">Philadelphia KnowledgeNet Chapter</div>
+      <div class="chs">Chapter Chair</div>
+      <div class="chterm">January 2026 – December 31, 2027</div>
+      <div class="chp">Co-chair: Manager Data Privacy, Capital One<br>Appointed by IAPP Portsmouth HQ December 2025</div>
+    </div>
+    <div class="chap">
+      <div class="chflag">🇺🇸</div>
+      <div class="cht">New Jersey KnowledgeNet Chapter</div>
+      <div class="chs">Chapter Chair</div>
+      <div class="chterm">January 2025 – December 2025</div>
+      <div class="chp">Co-chairs: Venable LLP · Valley Bank<br>Organized CPE-eligible events — speakers from Prudential Financial, Riker Danzig, BuzzFeed</div>
+    </div>
+    <div class="chap">
+      <div class="chflag">🇮🇳</div>
+      <div class="cht">New Delhi KnowledgeNet Chapter</div>
+      <div class="chs">Chapter Chair</div>
+      <div class="chterm">January 2021 – December 2021</div>
+      <div class="chp">Co-chairs: Associate Director Deloitte India · Director Ernst &amp; Young India<br>Organized Data Privacy Day 2021 events</div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="sec" id="experience">
+  <div class="ey">Professional Experience</div>
+  <h2>Career Timeline</h2>
+  <p class="sec-sub">20+ years building AI governance, data privacy, and information security programs across global enterprise environments.</p>
+  <div class="tl">
+
+    <div class="tli">
+      <div class="tld">Oct 2021 – Present<br>4 yrs 6 mos</div>
+      <div class="tlline"><div class="tldot"></div></div>
+      <div>
+        <div class="tlt">Assistant Vice President — AI Governance, Privacy &amp; Data Protection</div>
+        <div class="tlo">EXL Service · Jersey City, New Jersey, USA</div>
+        <div class="tldesc">Built and led the enterprise Responsible AI program aligned with EU AI Act, ISO 42001, and NIST AI RMF. Designed model governance workflows enabling safe deployment of 14 production AI/ML models. Implemented fairness, bias-testing, and interpretability controls with Model Cards for high-risk systems. Operationalised GDPR/CCPA/ISO 27701 frameworks reducing audit observations by 47% in nine months. Automated data discovery, RoPA, and lineage pipelines achieving 93% inventory coverage. Cut cross-border approval cycles to 8 days. Developed privacy-preserving LLM frameworks including RAG pipelines, differential privacy, and zero-retention modes. Created Board-level AI risk heatmaps and privacy scorecards. Recognised for the Cyber &amp; Privacy Regulatory Compliance Agent (95% accuracy; 4 weeks → 2 hours review time).</div>
+        <div class="tltags"><span class="tltag">Responsible AI</span><span class="tltag">EU AI Act</span><span class="tltag">ISO 42001</span><span class="tltag">NIST AI RMF</span><span class="tltag">GDPR</span><span class="tltag">CCPA</span><span class="tltag">LLM/RAG</span><span class="tltag">Model Governance</span></div>
+      </div>
+    </div>
+
+    <div class="tli">
+      <div class="tld">Sep 2019 – Oct 2021<br>2 yrs 2 mos</div>
+      <div class="tlline"><div class="tldot"></div></div>
+      <div>
+        <div class="tlt">Senior Manager — Global Data Protection Framework</div>
+        <div class="tlo">EXL Service · Noida, Uttar Pradesh, India</div>
+        <div class="tldesc">Steered the Global Data Protection Framework establishing governance and technology-enabled trust across digital operations. Integrated and normalised control frameworks aligned with HIPAA, HITECH, CCPA, South Africa POPIA, PIPEDA, and EU GDPR across multi-jurisdiction enterprise environments.</div>
+        <div class="tltags"><span class="tltag">Data Protection</span><span class="tltag">GDPR</span><span class="tltag">HIPAA</span><span class="tltag">CCPA</span><span class="tltag">PIPEDA</span><span class="tltag">Global Privacy</span></div>
+      </div>
+    </div>
+
+    <div class="tli">
+      <div class="tld">Jul 2017 – Sep 2019<br>2 yrs 3 mos</div>
+      <div class="tlline"><div class="tldot"></div></div>
+      <div>
+        <div class="tlt">Data Protection Officer (DPO)</div>
+        <div class="tlo">NIIT Limited · Gurugram, Haryana, India</div>
+        <div class="tldesc">Led global privacy governance covering GDPR, CCPA, LGPD, HIPAA, ISO 27701, and regional requirements. Directed DPIAs, TIAs, vendor assessments, and remediation across multiple geographies. Established enterprise-wide privacy policies, consent structures, and operational standards. Managed regulatory interactions and audit representation. Strengthened incident response workflows and breach handling. Enhanced ISO 27701-aligned operational controls and audit maturity.</div>
+        <div class="tltags"><span class="tltag">DPO</span><span class="tltag">GDPR</span><span class="tltag">LGPD</span><span class="tltag">ISO 27701</span><span class="tltag">DPIA</span><span class="tltag">Vendor Risk</span></div>
+      </div>
+    </div>
+
+    <div class="tli">
+      <div class="tld">Apr 2015 – Jun 2017<br>2 yrs 3 mos</div>
+      <div class="tlline"><div class="tldot"></div></div>
+      <div>
+        <div class="tlt">Senior Manager — Information Governance &amp; Data Privacy</div>
+        <div class="tlo">NIIT Limited · Gurugram, Haryana, India</div>
+        <div class="tldesc">Headed internal audit function and implemented Information Governance and Data Privacy compliance across UK Data Protection Act, ISO 27001:2013 (Information Security), ISO 22301:2012 (Business Continuity), ISO 9001:2015 (Quality Management), HIPAA-HITECH, SOC 1, and SOC 2.</div>
+        <div class="tltags"><span class="tltag">ISO 27001</span><span class="tltag">ISO 22301</span><span class="tltag">SOC 1 &amp; 2</span><span class="tltag">Internal Audit</span><span class="tltag">UK DPA</span></div>
+      </div>
+    </div>
+
+    <div class="tli">
+      <div class="tld">Sep 2014 – Mar 2015<br>7 mos</div>
+      <div class="tlline"><div class="tldot"></div></div>
+      <div>
+        <div class="tlt">Senior Manager — Privacy &amp; Compliance</div>
+        <div class="tlo">Omega Healthcare Management Services · Bengaluru, Karnataka, India</div>
+        <div class="tldesc">Led HIPAA, HITECH, and healthcare privacy compliance across clinical and operational teams. Managed internal audits, risk assessments, and remediation planning. Guided leadership on healthcare data regulations. Served as Internal Auditor for ISO 27001 &amp; 27701, improving audit readiness and evidence quality.</div>
+        <div class="tltags"><span class="tltag">HIPAA</span><span class="tltag">HITECH</span><span class="tltag">Healthcare Privacy</span><span class="tltag">ISO 27001</span><span class="tltag">Internal Audit</span></div>
+      </div>
+    </div>
+
+    <div class="tli">
+      <div class="tld">Jun 2010 – Mar 2015<br>4 yrs 10 mos</div>
+      <div class="tlline"><div class="tldot"></div></div>
+      <div>
+        <div class="tlt">Deputy Manager — Information Security Governance</div>
+        <div class="tlo">Hays Business Solutions · India</div>
+        <div class="tldesc">Built and rolled out ISO 27001:2013 and UK data-protection-aligned security controls. Supported audit cycles through evidence collection, compliance checks, and risk monitoring. Established consistent governance processes improving risk maturity across business units.</div>
+        <div class="tltags"><span class="tltag">ISO 27001</span><span class="tltag">UK DPA</span><span class="tltag">Security Governance</span><span class="tltag">Risk Management</span></div>
+      </div>
+    </div>
+
+    <div class="tli">
+      <div class="tld">Apr 2005 – May 2010<br>5 yrs 2 mos</div>
+      <div class="tlline"><div class="tldot"></div></div>
+      <div>
+        <div class="tlt">Team Developer — Information Security</div>
+        <div class="tlo">Hewitt Associates · India</div>
+        <div class="tldesc">Authored and updated core information security policies covering access control, incident response, segregation of duties, and asset management. Monitored SIEM events, logging, and application-level activity for US, UK, and EU operations. Supported recurring compliance testing, evidence preparation, and remediation tracking.</div>
+        <div class="tltags"><span class="tltag">Information Security</span><span class="tltag">SIEM</span><span class="tltag">Compliance</span><span class="tltag">Policy Development</span><span class="tltag">US/UK/EU Ops</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section class="sec" id="publications">
+  <div class="ey">Research &amp; Publications</div>
+  <h2>Academic &amp; Practitioner Publications</h2>
+  <div class="pub-list">
+    <div class="pub">
+      <div class="pnum">01</div>
+      <div><div class="ptitle">Ethical Governance Frameworks for AGI in Cyber-Physical Systems</div><div class="pmeta">IEEE SoutheastCon 2026 · IEEE Xplore · Session V6F: AI and Predictive Modeling · Presented March 8, 2026 · Authors: Chatterjee, Kumar, Kakaraparthi</div></div>
+      <div class="pbdg bl">IEEE Xplore</div>
+    </div>
+    <div class="pub">
+      <div class="pnum">02</div>
+      <div><div class="ptitle">The Privacy of Things: How New Jersey's Scrap Tire Act Creates a Criminal Surveillance Trap</div><div class="pmeta">IAPP Privacy Advisor · March 13, 2026 · CPE-eligible · 70,000+ professional readers</div></div>
+      <div class="pbdg bl">Published</div>
+    </div>
+    <div class="pub">
+      <div class="pnum">03</div>
+      <div><div class="ptitle">US Treasury Financial Services AI Risk Management Framework — Practitioner Analysis</div><div class="pmeta">IAPP Privacy Advisor · Accepted March 2026 · Forthcoming publication</div></div>
+      <div class="pbdg bp">Forthcoming</div>
+    </div>
+    <div class="pub">
+      <div class="pnum">04</div>
+      <div><div class="ptitle">Ethical Consideration and Challenges in Quantum AI (Chapter 13)</div><div class="pmeta">De Gruyter Brill · "Quantum Artificial Intelligence: Advancing Security, Healthcare, Smart Technologies" · Editor: Dr. Yogesh Kumar Sharma, KL Deemed University (NAAC A++) · In press 2026</div></div>
+      <div class="pbdg bp">De Gruyter</div>
+    </div>
+    <div class="pub">
+      <div class="pnum">05</div>
+      <div><div class="ptitle">AGI and Cyber Physical Systems for Healthcare and E-commerce Applications (Book Chapter)</div><div class="pmeta">Wiley-Scrivener · "Artificial General Intelligence (AGI) and Cyber Physical Systems for Healthcare and E-commerce Applications" · Editor: Dr. Aditya Khamparia, Babasaheb Bhimrao Ambedkar University · Accepted 2026</div></div>
+      <div class="pbdg bp">Wiley</div>
+    </div>
+    <div class="pub">
+      <div class="pnum">06</div>
+      <div><div class="ptitle">AI-Based Fraud Detection on Embedded POS Terminals in Cloud-Integrated FinTech Systems</div><div class="pmeta">Springer LNNS · ComSIA 2026 · Top 20% acceptance · Indexed: Scopus · EI Compendex · DBLP · Web of Science</div></div>
+      <div class="pbdg bp">Springer LNNS</div>
+    </div>
+    <div class="pub">
+      <div class="pnum">07</div>
+      <div><div class="ptitle">Named Contributor — "Architecture of Intelligence" AGI Report</div><div class="pmeta">AI2030 Global Fellows Research Publication · November 2025 · Listed p.18 as Global Fellow contributor · 20-page AGI governance research report</div></div>
+      <div class="pbdg bl">Published</div>
+    </div>
+    <div class="pub">
+      <div class="pnum">08</div>
+      <div><div class="ptitle">AI Governance Expert Commentary — Bylined Article</div><div class="pmeta">Rightlever News / EnterpriseDB Newsroom · July 11, 2025 · Bylined following recorded expert interview by Rightlever editorial team</div></div>
+      <div class="pbdg bl">Published</div>
+    </div>
+  </div>
+</section>
+
+<!-- LINKEDIN ARTICLES -->
+<section class="sec" id="articles">
+  <div class="ey">Thought Leadership</div>
+  <h2>LinkedIn Articles &amp; Newsletters</h2>
+  <p class="sec-sub">16 long-form articles published on LinkedIn covering AI governance, EU AI Act, responsible AI, privacy law, and AI risk frameworks.</p>
+  <div class="art-grid">
+    <div class="acard"><div class="atitle">Responsible AI Governance Starts Here: Turning De-Identification into a Strategic Asset</div><div class="ameta">April 2025</div></div>
+    <div class="acard"><div class="atitle">The Dance with the Algorithm: Risks and Redemption in AI Agentic Models — A Humanitarian Perspective</div><div class="ameta">December 2024</div></div>
+    <div class="acard"><div class="atitle">Ethicraft | Issue 01 — AI Ethics Newsletter</div><div class="ameta">July 31, 2025</div></div>
+    <div class="acard"><div class="atitle">Navigating the Risk Classification of AI Systems under the EU AI Act</div><div class="ameta">2024</div></div>
+    <div class="acard"><div class="atitle">EU AI Act: A Milestone in AI Regulation and Data Privacy</div><div class="ameta">2024</div></div>
+    <div class="acard"><div class="atitle">Explainable AI: Transparency or Tokenism?</div><div class="ameta">2024</div></div>
+    <div class="acard"><div class="atitle">AI Risk Governance Framework: The 1.5 Line of Defense</div><div class="ameta">2024</div></div>
+    <div class="acard"><div class="atitle">Emotion-Aware Ethical AI for Human-AI Collaboration</div><div class="ameta">2024</div></div>
+    <div class="acard"><div class="atitle">A Human-Centered Perspective on Bias-Free Cognitive Computing</div><div class="ameta">2024</div></div>
+    <div class="acard"><div class="atitle">The Role of Data Protection Principles in AI Governance Framework</div><div class="ameta">April 2023</div></div>
+    <div class="acard"><div class="atitle">Washington's 'My Health, My Data' Law — What It Means for Organizations</div><div class="ameta">2023</div></div>
+    <div class="acard"><div class="atitle">1st Act of Artificial Intelligence in the World — An Operationalization View</div><div class="ameta">2023</div></div>
+  </div>
+</section>
+
+<!-- PEER REVIEW -->
+<section class="sec" id="reviewing">
+  <div class="ey">Expert Peer Review</div>
+  <h2>Judging &amp; Manuscript Review</h2>
+  <p class="sec-sub">Selected as peer reviewer across four IEEE and Scopus-indexed conferences. 34+ manuscripts reviewed spanning AI ethics, data protection, FinTech AI, information security, healthcare AI, and IoT systems.</p>
+  <div class="rev-grid">
+    <div class="rcard">
+      <div class="rconf">IEEE IATMSI 2026</div>
+      <div class="ridx">IEEE Sponsored · IIITM Gwalior</div>
+      <div class="rnum">11</div>
+      <div class="rlbl">papers reviewed · Government of India parliamentary institution · Track 3: AI, IoT &amp; Computer Vision · Official institutional email confirmation</div>
+    </div>
+    <div class="rcard">
+      <div class="rconf">FTNCT-08</div>
+      <div class="ridx">Scopus / Elsevier · Procedia CS</div>
+      <div class="rnum">14</div>
+      <div class="rlbl">papers reviewed · Full accept/reject decisions documented · FinTech AI, adaptive network defense, medical AI, OCR systems</div>
+    </div>
+    <div class="rcard">
+      <div class="rconf">ICiTsIF 2026</div>
+      <div class="ridx">IEEE + Scopus Indexed</div>
+      <div class="rnum">9</div>
+      <div class="rlbl">papers reviewed · Including Review #700: Data Protection &amp; Privacy bibliometric study — direct field match</div>
+    </div>
+    <div class="rcard">
+      <div class="rconf">DoSCI 2026</div>
+      <div class="ridx">IEEE + Scopus Indexed</div>
+      <div class="rnum">Dual</div>
+      <div class="rlbl">Co-author and peer reviewer in same conference — demonstrating both contribution and evaluative expertise</div>
+    </div>
+  </div>
+</section>
+
+<!-- SPEAKING -->
+<section class="sec" id="speaking">
+  <div class="ey">Speaking &amp; Presentations</div>
+  <h2>Conference Engagements</h2>
+  <div class="spk-list">
+    <div class="spki">
+      <span class="spkrole rk">Keynote</span>
+      <div class="spkb"><div class="spkt">DASGRI-2026 — International Conference on Data Science and AI for Social Goods and Responsible Innovation</div><div class="spkm">Goldsmiths, University of London · April 11, 2026</div></div>
+      <div class="spky">2026</div>
+    </div>
+    <div class="spki">
+      <span class="spkrole rp">Presented</span>
+      <div class="spkb"><div class="spkt">Ethical Governance Frameworks for AGI in Cyber-Physical Systems — IEEE SoutheastCon 2026</div><div class="spkm">Session V6F · IEEE Xplore Publication · Presented March 8, 2026</div></div>
+      <div class="spky">2026</div>
+    </div>
+    <div class="spki">
+      <span class="spkrole ri">Invited</span>
+      <div class="spkb"><div class="spkt">ICCCNet-2026 — International Conference on Computing and Communication Networks</div><div class="spkm">Manchester Metropolitan University, UK · July 18, 2026</div></div>
+      <div class="spky">2026</div>
+    </div>
+    <div class="spki">
+      <span class="spkrole ri">Invited</span>
+      <div class="spkb"><div class="spkt">INTOTECH LIVE — Guest Speaker, AI Governance &amp; Privacy</div><div class="spkm">Info-Tech Research Group · Las Vegas, NV</div></div>
+      <div class="spky">2025</div>
+    </div>
+    <div class="spki">
+      <span class="spkrole ri">Featured</span>
+      <div class="spkb"><div class="spkt">The Data Diva Talks Privacy — Featured Expert Guest</div><div class="spkm">Hosted by Debbie Reynolds · Globally recognized privacy podcast</div></div>
+      <div class="spky">2023</div>
+    </div>
+    <div class="spki">
+      <span class="spkrole ri">Panel</span>
+      <div class="spkb"><div class="spkt">Dr. TMA Pai Policy Summit — AI &amp; Corporate Governance Panel</div><div class="spkm">Bengaluru, India · Policy summit on AI and corporate governance</div></div>
+      <div class="spky">2024</div>
+    </div>
+    <div class="spki">
+      <span class="spkrole ri">Invited</span>
+      <div class="spkb"><div class="spkt">ICICC-2023 — 6th International Innovative Computing and Communication Conference</div><div class="spkm">University of Delhi · NIT Patna · University of Valladolid · Springer LNCS · G20 India context · Feb 17-18, 2023</div></div>
+      <div class="spky">2023</div>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERSHIPS -->
+<section class="sec" id="memberships">
+  <div class="ey">Affiliations</div>
+  <h2>Professional Memberships &amp; Fellowships</h2>
+  <div class="mem-grid">
+    <div class="mcard"><div class="mn">AI2030 Global Fellowship</div><div class="mr">Global Fellow — 2025 Cohort</div><div class="md">Competitively selected from global applicant pool (13-day window). 5,000+ professionals across 50+ countries. Prior cohorts engaged at G20, World Bank, IMF, AWS re:Invest. Named contributor to published AGI governance research report.</div></div>
+    <div class="mcard"><div class="mn">Center for AI and Digital Policy (CAIDP)</div><div class="mr">Fellow Researcher</div><div class="md">Policy research fellowship at organization directly shaping UN, European Union, and US government AI governance legislation and frameworks.</div></div>
+    <div class="mcard"><div class="mn">IAPP — International Association of Privacy Professionals</div><div class="mr">FIP · AIGP · Chapter Chair (3 chapters)</div><div class="md">World's largest privacy association. 70,000+ members. Holds FIP — highest individual designation. Chapter Chair across Philadelphia, New Jersey, and New Delhi spanning January 2020 to December 2027.</div></div>
+    <div class="mcard"><div class="mn">ISACA</div><div class="mr">CISM Member</div><div class="md">Global professional association for information security governance, risk, and compliance. Certified Information Security Manager.</div></div>
+  </div>
+</section>
+
+<!-- ORIGINAL WORK -->
+<section class="sec" id="work">
+  <div class="ey">Original Contributions</div>
+  <h2>AI Governance Frameworks &amp; Systems</h2>
+  <div class="work-grid">
+    <div class="wcard">
+      <div class="wey">WorldAIX CAIO Program · 2025</div>
+      <div class="wt">AI-Powered Cyber &amp; Privacy Regulatory Compliance Agent</div>
+      <div class="wd">Original LLM + RAG + vector database + LangChain agent architecture for enterprise regulatory compliance automation. Covers 10+ international data protection regulations including GDPR, CCPA, EU AI Act, NIST AI RMF, HIPAA.</div>
+      <div class="metrics">
+        <div class="met"><div class="mval">95%</div><div class="mlbl">Compliance rate</div></div>
+        <div class="met"><div class="mval">70–80%</div><div class="mlbl">Workload reduction</div></div>
+        <div class="met"><div class="mval">2–4hrs</div><div class="mlbl">vs 3–4 weeks</div></div>
+        <div class="met"><div class="mval">$1M</div><div class="mlbl">Incremental ROI</div></div>
+      </div>
+    </div>
+    <div class="wcard">
+      <div class="wey">AI2030 CAIO Program · 2025</div>
+      <div class="wt">Responsible AI Governance Program — Healthcare &amp; Life Sciences</div>
+      <div class="wd">Original RAI governance framework for healthcare sector. Five-stage operationalization lifecycle using IBM AI Fairness 360, LIME, SHAP, MLflow, Azure ML. Aligned with NIST AI RMF, ISO 42001, HIPAA, HITRUST. Flagship use case: readmission risk model with 20% bias reduction across race/gender outcomes.</div>
+      <div style="margin-top:.75rem;font-size:11px;color:var(--t3)">Frameworks: NIST AI RMF · ISO 42001 · HIPAA · HITRUST · EU AI Act · GDPR · CCPA · FDA Guidelines</div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARD -->
+<section class="sec" id="award">
+  <div class="ey">Recognition</div>
+  <h2>Awards</h2>
+  <div class="award-card">
+    <div class="astar">★</div>
+    <div>
+      <div class="aname">International Privacy Protection Award 2024</div>
+      <div class="aorg">FDPPI — Foundation for Data Protection Professionals in India</div>
+      <div class="adesc">Presented at Manipal Law School · Recognizing outstanding contribution to international privacy protection practice and the global data protection profession</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec" id="contact">
+  <div class="ey">Contact</div>
+  <h2>Get in Touch</h2>
+  <div class="contact-bar" style="margin-bottom:1.25rem">
+    <div class="ci-item"><div class="cdot"></div><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="89ffe2e2fde8fae2fcfae8c9eee4e8e0e5a7eae6e4">[email&#160;protected]</a></div>
+    <div class="ci-item"><div class="cdot"></div>Jersey City / San Francisco Bay Area, CA</div>
+    <div class="ci-item"><div class="cdot"></div><a href="https://linkedin.com/in/vivekdp" style="color:var(--gold2);text-decoration:none">linkedin.com/in/vivekdp</a></div>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;gap:6px">
+    <span class="cert" style="color:var(--t2);border-color:var(--b2)">Expert Judge</span>
+    <span class="cert" style="color:var(--t2);border-color:var(--b2)">Invited Speaker</span>
+    <span class="cert" style="color:var(--t2);border-color:var(--b2)">Peer Reviewer</span>
+    <span class="cert" style="color:var(--t2);border-color:var(--b2)">Advisory Roles</span>
+    <span class="cert" style="color:var(--t2);border-color:var(--b2)">Panel Discussions</span>
+    <span class="cert" style="color:var(--t2);border-color:var(--b2)">Workshop Facilitator</span>
+  </div>
+</section>
+
+<footer>
+  <div class="fn">Vivek Kumar</div>
+  <div class
